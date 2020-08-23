@@ -10,7 +10,7 @@ async def on_ready():
     game = discord.Game('★Game name★')
     await client.change_presence(status=discord.Status.online, activity=game)
 
-#/dm {할말}로 전체DM 전송
+#/dm {txt}로 전체DM 전송
 @client.event
 async def on_message(message):
     if message.content.startswith('/dm'):
