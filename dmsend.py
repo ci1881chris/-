@@ -22,7 +22,7 @@ async def on_message(message):
                     msg = message.content[4:]
                     # if you have manage messages permissons you can use this command
                     if message.author.guild_permissions.manage_messages:
-                        embed = discord.Embed(colour=0x1DDB16, timestamp=message.created_at)
+                        embed = discord.Embed(color=0x1DDB16, timestamp=message.created_at)
                         embed.add_field(name="★★title★★", value=msg, inline=True)
                         embed.set_footer(text=f"discord.gg/★★invite code★★")
                         await i.send(embed=embed)
