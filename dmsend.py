@@ -6,11 +6,11 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print("봇이 정상적으로 실행되었습니다.")
+    print("BOT ONLINE.")
     game = discord.Game('★Game name★')
     await client.change_presence(status=discord.Status.online, activity=game)
 
-#/dm {txt}로 전체DM 전송
+#/dm {msg} to send dm
 @client.event
 async def on_message(message):
     if message.content.startswith('/dm'):
